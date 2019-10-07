@@ -3,7 +3,7 @@
     <div id="divFrom" class="col-sm-3 my-sm-5 border rounded" style="margin-left:0.5%">
       <form class="container">
         <center>
-          <h1>Register</h1>
+          <h1 id="register">Register</h1>
         </center>
         <hr>
         <div>
@@ -68,6 +68,9 @@
 </template>
 <style scoped lang="scss">
 @import"assets/style.scss";
+#register{
+  color: $white !important;
+}
  #text{
   color: $white !important;
  }
@@ -75,6 +78,7 @@
 #had{
   color: $primary !important;
 }
+
 </style>
 <script>
 // import ROUTER from "router";

@@ -4,7 +4,7 @@
       <div id="divLogin" class="col-sm-3 my-sm-5 border rounded" style="margin-left:0.5%">
         <form class="container">
           <center>
-            <h1>Login</h1>
+            <h1 id="login">Login</h1>
           </center>
           <hr>
           <div class="row">
@@ -48,6 +48,9 @@
   color: $white !important;
 }
 #pass {
+  color: $white !important;
+}
+#login{
   color: $white !important;
 }
 </style>

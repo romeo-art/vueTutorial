@@ -1,25 +1,20 @@
 <template>
   <div fixed="top">
-    <b-card  title="Card Title" no-body>
-      <b-card-header  header-tag="nav">
-        <b-nav  card-header tabs>
-          <b-nav-item  active>LIT-U</b-nav-item>
-          <b-nav-item @click="redirect('/Login')"  v-if="auth.user ===null"  id="login">Login</b-nav-item>
-          <b-nav-item @click="redirect('/Register')"  v-if="auth.user ===null"  id="signup">Sign Up</b-nav-item>
-        </b-nav>
-      </b-card-header>
-
-      <b-card-body id="background">
-        <b-card-text class="text-center">LUCIFER INSTITUTE OF TECHNOLOGY UNIVERSITY</b-card-text>
-      </b-card-body>
-    </b-card>
-  </div>
+    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar-brand href="#" id="title">MYAPP</b-navbar-brand>
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-item v-on:click="redirect('/Login')" v-if="auth.user ===null"  id="login">Login</b-nav-item>
+        <b-nav-item v-on:click="redirect('/Register')" v-if="auth.user ===null"  id="signup">Register</b-nav-item>
+      </b-navbar-nav>
+  </b-collapse>
+    </b-navbar>
+</div>
 </template>
+
 <style scoped lang="scss">
 @import "assets/style.scss";
-#title {
-  color: $primary !important;
-}
 
 #background {
   background-color: #ffc299;

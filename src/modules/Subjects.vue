@@ -33,7 +33,7 @@
                     <td>{{ item.time }}</td>
                     <td>{{ item.day }}</td>
                     <td>{{ item.room }}</td>
-                    
+                  
                   </tr>
                 </tbody>
               </table>
@@ -60,9 +60,11 @@
                 <b-form-input v-model="content.room" id="room" size="sm"></b-form-input>
                 <br>
                 <br>
-                
+
                 <b-button variant="primary" @click="addItem">Add Subject</b-button>
                 <b-button variant="primary" @click="remove">Remove Subject</b-button>
+                <br>
+                <br>
                 
                 <b-form-input v-model="delInfo.delCourse" id="room" size="sm"></b-form-input>
               </b-form-group>
@@ -81,6 +83,9 @@
     padding: $jumbotronpadding !important;
     text-align: $text-align !important;
     background-color:$jumbo !important;
+}
+#btn-add, #btn-remove{
+  width: 10px;
 }
 </style>
 
