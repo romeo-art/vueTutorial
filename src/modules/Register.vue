@@ -99,9 +99,19 @@ export default {
     submit: function(e) {
       e.preventDefault();
       sessionStorage.setItem("Username", this.content.username),
-        sessionStorage.setItem("Email", this.content.email),
-        sessionStorage.setItem("Password", this.content.password),
-        AUTH.register(this.content.username, this.content.password);
+      sessionStorage.setItem("Email", this.content.email),
+      sessionStorage.setItem("Password", this.content.password),
+      AUTH.register(this.content.username, this.content.password);
+      let link = `http://localhost:3000/db/insert/${this.content.username}/${this.content.email}/${this.content.password}`;
+      jquery.ajax({
+          url: link,
+          method: 'GET',
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+          }
+        }).then(response => {
+          alert(response.usename);
+        })
     }
   }
 };

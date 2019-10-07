@@ -37,5 +37,5 @@ export default {
     save() {
         // this.user = null
         ROUTER.push('/PersonalInfo')
-    }
+    } 
 }
