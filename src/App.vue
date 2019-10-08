@@ -2,6 +2,7 @@
   <div id="app" class="background">
   <Header></Header>
   <AppBody></AppBody>
+  <Post></Post>
   <!-- <Sidebar v-show = "$route.path === '/Dashboard' || $route.path === '/Subjects'|| $route.path === '/PersonalInfo' ? true: false"> -->
   <!-- </Sidebar> -->
   </div>
@@ -22,12 +23,14 @@
 // import Sidebar from 'router/frame/Sidebar.vue'
 import Header from 'components/frame/Header.vue'
 import AppBody from 'components/frame/Body.vue'
+import Post from 'modules/postTimeline.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
-    AppBody
+    AppBody,
+    Post
     // Sidebar
   }
 }

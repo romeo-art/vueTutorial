@@ -1,5 +1,5 @@
 <template>
-  <div id="body">
+  <div id="appbody">
     <div v-if="auth.user !== null">
       <sideBar></sideBar>
         <transition>
@@ -21,7 +21,7 @@
 import sideBar from "components/frame/Sidebar.vue";
 import AUTH from 'services/auth'
 export default {
-  name: "body",
+  name: "appbody",
   components: {
     sideBar
   },

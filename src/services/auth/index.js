@@ -37,5 +37,8 @@ export default {
     save() {
         // this.user = null
         ROUTER.push('/PersonalInfo')
-    } 
+    },
+    postnow(){
+        ROUTER.push('/postTimeline')
+    }
 }

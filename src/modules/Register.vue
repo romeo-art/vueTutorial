@@ -83,6 +83,7 @@
 <script>
 // import ROUTER from "router";
 import AUTH from "services/auth";
+import jquery from "jquery"
 export default {
   data() {
     return {

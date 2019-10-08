@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <div class="jumbotron">
+    <div class="jumbotron mt-60">
       <h1>Personal Information</h1>
     </div>
     <div id="card">

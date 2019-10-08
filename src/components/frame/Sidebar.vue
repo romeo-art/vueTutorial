@@ -39,6 +39,11 @@ export default {
           href: "/confirmLogout",
           title: "Logout",
           icon: 'fas fa-sign-out-alt',
+        },
+        {
+          href: "/postTimeline",
+          title: "Create Post",
+          icon: 'fas fa-ask-alt',
         }
       ]
     };
